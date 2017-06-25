@@ -1,12 +1,12 @@
 body{
     font-family: 'Orienta', sans-serif;
-    background-color: #e74c3c;
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/47/c8/e7/47c8e711cec0601b99b94805a27ce919.gif);
 }
 form{
     margin-top: 175px;
     width: 100%;
-    background-color: #c0392b;
-    box-shadow: 5px 5px 5px black;
+    background-color: #ff0012;
+    box-shadow: 10px 10px 10px gray;
     border-radius: 20px;
     padding: 50px;
     color: white;
