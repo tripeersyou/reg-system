@@ -1,0 +1,18 @@
+body{
+    font-family: 'Audiowide', cursive;
+    background-image: url(http://orig13.deviantart.net/aabc/f/2013/338/1/6/pottermore_background___dueling_hall_by_xxtayce-d6wp5jn.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    background-color: #8D6E63;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 20px;
+    padding: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
