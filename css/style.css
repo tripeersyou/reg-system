@@ -1,34 +1,23 @@
 body{
-    background-color: #7f8c8d;
+    background-color: #95a5a6;
     font-family: 'Oxygen', sans-serif;
     color: white;
     padding: 0;
     margin: 0;
 }
-#pic{
-    /*background-image: url(https://scontent.fmnl6-1.fna.fbcdn.net/v/t34.0-12/19458270_10208683506997437_1807420506_n.jpg?oh=a453af744150f47a00c9fc30f161503f&oe=59507CA8);*/
-    /*background-image: url(https://static.vecteezy.com/system/resources/previews/000/106/180/non_2x/space-technology-vector-icons.jpg);*/
-    /*background-image: url(https://previews.123rf.com/images/marvinjk/marvinjk1311/marvinjk131100041/24313686-Modern-gadgets-vector-set-Stock-Vector.jpg);*/
-    background-image: url(https://image.freepik.com/free-vector/technology-background-of-gadgets-with-wifi-in-flat-design_23-2147625832.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 700px 760px;
-    /*margin-right: px;*/
-    height: 100vh;
-}
-label#lname{
-    text-align: left !important;
-}
 .misa-logo{
     padding: 10px;
 }
 .form{
-    background-color:#336E7B;
+    margin-top: 20px;
+    color: black;
+    background-color:#ecf0f1;
     position: relative;
+    box-shadow: 2px 2px 10px black;
 }
 form{
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     flex-direction: column;

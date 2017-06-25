@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link rel="stylesheet" href="css/event.css">
-    <title>MISA General Assembly</title>
+    <title>Event Title</title>
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <div class="container">
     <form method="post">
-        <h2 style="text-align:center;padding:5px;">MISA General Assembly: Patronus</h2>
+        <h2 style="text-align:center;padding:5px;">Event Registration</h2>
         <br>
         <input type="text" style="text-align:center" maxlength="6" placeholder="ID Number" class="form-control" data-toggle="modal" name="id_number">
     </form>

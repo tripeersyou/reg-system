@@ -10,22 +10,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Ateneo MISA RecWeek</title>
+    <title>Sign Up!</title>
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <div class="container-fluid">
     <div class="row">
-        <div id="pic"class="col-md-6">
-        
-        </div>
-        <div class="col-md-6 form">
+        <div class="col-md-6 col-md-offset-3 form">
             <form method="post" class="form-horizontal">
                 <center>
-                    <img class="misa-logo" width="350px" src="http://misa.org.ph/img/completelogo-white.png"/>
-                    <h4> Ateneo Management Information Systems Association </h4>
-                    <h4> RecWeek 2017</h4>
+                    <h1>Be a member!</h1>
+                    <h4> Sign Up! </h4>
                 </center>
                 <br>
                 <div class="form-group">
@@ -53,7 +49,7 @@
                 <div class="form-group">
                     <label for="course" class="col-sm-2 control-label">Course</label>
                     <div class="col-sm-4">
-                    <input name="course" type="text" class="form-control" id="course" placeholder="BS MIS" required>
+                    <input name="course" type="text" class="form-control" id="course" placeholder="Course" required>
                     </div>
                     <label for="year" class="col-sm-1 control-label">Year</label>
                     <div class="col-sm-5">
@@ -95,7 +91,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <button name="submit_btn" class="col-sm-2 col-sm-offset-5 btn btn-primary" type="submit">Join MISA!</button>
+                    <button name="submit_btn" class="col-sm-2 col-sm-offset-5 btn btn-success" type="submit">Join!</button>
                 <div>
             </form>
         </div>
