@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orienta" rel="stylesheet">
     <link rel="stylesheet" href="css/event.css">
     <title>Event Title</title>
 </head>
@@ -16,11 +16,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <div class="container">
-    <form method="post">
-        <h2 style="text-align:center;padding:5px;">Event Registration</h2>
-        <br>
-        <input type="text" style="text-align:center" maxlength="6" placeholder="ID Number" class="form-control" data-toggle="modal" name="id_number">
-    </form>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form method="post">
+                <h2 style="text-align:center;padding:5px;">Event Registration</h2>
+                <h4 style="text-align:center;padding:5px;">Welcome!</h4>
+                <br>
+                <input type="text" style="text-align:center" maxlength="6" placeholder="ID Number" class="form-control" data-toggle="modal" name="id_number">
+            </form>
+        </div>
+    </div>
 </div>
 
 
@@ -29,7 +34,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel"><center>Patronus</center></h4>
+        <h4 class="modal-title" id="myModalLabel"><center>Event</center></h4>
       </div>
       <div class="modal-body">
         <?php
@@ -44,7 +49,7 @@
                             $('#myModal').modal('show');
                         });
                         </script>";
-                        echo "<center>Welcome! ". $row['first_name']."!</center>";
+                        echo "<center>Welcome ". $row['first_name']."!</center>";
                     }
                 }else{
                     echo "<script type='text/javascript'>
