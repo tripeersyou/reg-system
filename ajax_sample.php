@@ -25,9 +25,7 @@
     <div class="sample">
         ID Number: <input class="form-control" type="text" name="id_number" id="id_number" onchange='search(<?php echo $members ?>)'>
         <br>
-        <br>
         First Name: <input class="form-control" type="text" name="first_name" id="first_name">
-        <br>
         <br>
         Last Name: <input class="form-control" type="text" name="last_name" id="last_name">                
     </div>
