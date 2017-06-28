@@ -3,20 +3,25 @@ body{
     /*font-family: 'Oxygen', sans-serif;*/
     font-family: 'PT Sans', sans-serif;
 }
-.header{
-}
-form{
-    background-color: #0aa;
-    color: #eee;
-    position: fixed;
-    width: 50%;
+.form{
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    padding-right: 10px;
-    padding-left: 10px;
+}
+.warning{
     border-radius: 10px;
 }
-input#id_number{
+form{
+    background-color: #0aa;
+    /*height: 680px;*/
+    color: #eee;
+    padding: 1px;
+    border-radius: 10px;
+}
+input{
     text-align: center;
+}
+select{
+    text-align-last: center;
 }

@@ -18,36 +18,33 @@
 <script src="js/script.js"></script>
 <div class="container-fluid">
     <div class="row">
+        <h4><label class="label label-danger col-sm-4 col-sm-offset-4 warning" id="warning"></label></h4>
         <div class="col-md-6 col-md-offset-3 form">
             <form method="post" action="submit.php" class="form-horizontal">
-                <center>
-                    <h1 class="header">Be a member!</h1>
-                    <h4 class="header"> Sign Up! </h4>
-                </center>
                 <br>
                 <div class="form-group">
-                    <label for="id_number" class="col-sm-1 control-label">ID #</label>
-                    <div class="col-sm-11">
-                    <input  name="id_number" type="text" maxlength="6" class="form-control" id="id_number" placeholder="ID Number" required>
+                    <div class="col-sm-4 col-sm-offset-4">
+                    <center><label for="id_number" class="control-label">ID Number</label></center>
+                    <input  name="id_number" type="text" maxlength="6" class="form-control" id="id_number" placeholder="171234" required>
                     </div>
                 </div>  
                 <div class="form-group">
-                    <label for="first_name" class="col-sm-1 control-label">Name</label>
-                    <div class="col-sm-5">
-                    <input name="name" type="text" class="form-control" id="name" placeholder="LAST NAME, FIRST NAME M.I." required>
+                    <div class="col-sm-5 col-sm-offset-1">
+                    <center><label for="first_name" class="control-label">Full Name</label></center>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Loyola, Ignacio A." required>
                     </div>
-                    <label for="nick_name" class="col-sm-2 control-label">Nickname</label>
-                    <div class="col-sm-4">
-                    <input name="nick_name" type="text" class="form-control" id="nick_name" placeholder="Nickname" required>
+                    <div class="col-sm-5">
+                    <center><label for="nick_name" class="control-label">Nickname</label></center>
+                    <input name="nick_name" type="text" class="form-control" id="nick_name" placeholder="Iggy" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="course" class="col-sm-1 control-label">Course</label>
-                    <div class="col-sm-5">
-                    <input name="course" type="text" class="form-control" id="course" placeholder="Course" required>
+                    <div class="col-sm-5 col-sm-offset-1">
+                    <center><label for="course" class="control-label">Course</label></center>
+                    <input name="course" type="text" class="form-control" id="course" placeholder="BS MIS" required>
                     </div>
-                    <label for="year" class="col-sm-1 control-label">Year</label>
                     <div class="col-sm-5">
+                    <center><label for="year" class="control-label">Year</label></center>
                     <select name="year" id="year" class="form-control">
                         <option value="1">1st Year</option>
                         <option value="2">2nd Year</option>
@@ -58,40 +55,39 @@
                     </div>
                 </div>
                     <div class="form-group">
-                    <label for="mobile" class="col-sm-1 control-label">Mobile</label>
-                    <div class="col-sm-11">
-                    <input name="mobile" type="text" class="form-control" id="mobile" maxlength="10"placeholder="Mobile Number" required>
+                    <div class="col-sm-10 col-sm-offset-1">
+                    <center><label for="mobile" class="control-label">Mobile</label></center>
+                    <input name="mobile" type="text" class="form-control" id="mobile" maxlength="10"placeholder="912345678" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="email" class="col-sm-1 control-label">Email</label>
-                    <div class="col-sm-11">
-                    <input name="email" type="email" class="form-control" id="email" placeholder="Email" required>
+                    <div class="col-sm-10 col-sm-offset-1">
+                    <center><label for="email" class="control-label">Email</label></center>
+                    <input name="email" type="email" class="form-control" id="email" placeholder="example@obf.ateneo.edu" required>
                     </div>
                 </div>  
                 <div class="form-group">
-                    <label for="bday" class="col-sm-1 control-label">Birthday</label>
-                    <div class="col-sm-11">
+                    <div class="col-sm-10 col-sm-offset-1">
+                    <center><label for="bday" class="control-label">Birthday</label></center>
                     <input name="bday" type="date" class="form-control" id="bday"required>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="radio">
-                        <label class="col-sm-3 col-sm-offset-4 radio-inline">
-                        <input type="radio" name="type" id="non-scholar" value="0">Non-Scholar
-                        </label>
-                        <label class="col-sm-3 col-sm-offset-4 radio-inline">
-                        <input type="radio" name="type" id="scholar" value="1">Scholar
-                        </label>
+                        <center>
+                            <label class="radio-inline">
+                            <input type="radio" name="type" id="non-scholar" value="0">Non-Scholar
+                            </label>
+                            <label class="radio-inline">
+                            <input type="radio" name="type" id="scholar" value="1">Scholar
+                            </label>
+                        </center>
                     </div>
                 </div>
                 <div class="form-group">
                     <button name="submit_btn" class="col-sm-2 col-sm-offset-5 btn btn-success" type="submit">Join!</button>
                 <div>
-                <br><br>
-                <h4><label class="label label-danger col-sm-4 col-sm-offset-4 warning" id="warning"></label></h4>
             </form>
-
         </div>
     </div>
 </div>

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('#course').val("");
+    $('#year').val("1");
     $('#id_number').focus();
     $('#id_number').keyup(function(){
         var textbox = $(this);
@@ -28,7 +28,7 @@ $(document).ready(function(){
                 $('#warning').text("");
                 $('#name').val("");
                 $('#nick_name').val("");
-                $('#course').val("");
+                // $('#course').val("");
                 $('#mobile').val("");
                 $('#year').val("");
                 $('#email').val("");
