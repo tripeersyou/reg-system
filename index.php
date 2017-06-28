@@ -1,5 +1,5 @@
 <?php
-    require 'dbconfig/config.php'
+    include 'db_connect.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,16 +9,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
     <title>Sign Up!</title>
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="application.js"></script>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-6 col-md-offset-3 form">
-            <form method="post" class="form-horizontal">
+            <form method="post" action="submit.php" class="form-horizontal">
                 <center>
                     <h1>Be a member!</h1>
                     <h4> Sign Up! </h4>
@@ -97,38 +98,5 @@
         </div>
     </div>
 </div>
-    <?php
-        if(isset($_POST['submit_btn'])){
-            $idnumber = $_POST['id_number'];
-            $firstname = $_POST['first_name'];
-            $nickname = $_POST['nick_name'];
-            $lastname = $_POST['last_name'];
-            $course = $_POST['course'];
-            $mobile = $_POST['mobile'];
-            $email = $_POST['email'];
-            $year = $_POST['year'];
-            $bday = $_POST['bday'];
-            $scholar = $_POST['type'];
-            $query = "SELECT * FROM members WHERE id='$idnumber'";
-            $query_run = mysqli_query($con,$query);
-            if(mysqli_num_rows($query_run) == 0){
-                if($scholar == "scholar"){
-                    $query = "INSERT INTO members VALUES ('$idnumber','$firstname','$nickname','$lastname','$course','$mobile','$email','$year','$bday',TRUE)";
-                    $query_run = mysqli_query($con, $query);
-                    if(!$query_run){
-                        echo '<script type=text/javascript>alert("Error!")</script>';
-                    }
-                }else{
-                    $query = "INSERT INTO members VALUES ('$idnumber','$firstname','$nickname','$lastname','$course','$mobile','$email','$year','$bday',FALSE)";
-                    $query_run = mysqli_query($con, $query);
-                    if(!$query_run){
-                        echo '<script type=text/javascript>alert("Error!")</script>';
-                    }
-                }
-            } else {
-                echo '<script type=text/javascript>alert("You have already signed up!")</script>';
-            }
-        } 
-    ?>
 </body>
 </html>
