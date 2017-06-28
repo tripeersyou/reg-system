@@ -28,7 +28,7 @@ $(document).ready(function(){
                 $('#warning').text("");
                 $('#name').val("");
                 $('#nick_name').val("");
-                // $('#course').val("");
+                $('#course').val("");
                 $('#mobile').val("");
                 $('#year').val("");
                 $('#email').val("");
